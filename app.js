@@ -1,16 +1,19 @@
 const express=require('express');
 const app=express();
 const cors=require('cors')
-
+app.use(cors({
+    origin:"http://localhost:44322",
+    credentials: true,
+}));
 app.use(cors());
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
 app.use('/',require('./route/index'))
 app.use('/',require('./route/mail'))
-const PORT=process.env.PORT || 4500
+const port=process.env.PORT || 4500
 
-app.listen(PORT,(err)=>{
+app.listen(port,(err)=>{
 if(err){
     console.log(`Error in server connection ${err}`)
 }
