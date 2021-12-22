@@ -5,11 +5,10 @@ app.use(cors({
     origin:"http://localhost:44322",
     credentials: true,
 }));
-app.use(cors());
+// app.use(cors());
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
-app.use('/',require('./route/index'))
 app.use('/',require('./route/mail'))
 const port=process.env.PORT || 4500
 
