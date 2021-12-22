@@ -2,7 +2,7 @@
   "name": "sample",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "node app.js",
   "dependencies": {
     "express": "^4.17.2",
     "jsonwebtoken": "^8.5.1",
