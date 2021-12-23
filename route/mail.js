@@ -9,7 +9,7 @@ router.post('/sendMail',(req,res)=>{
             port: 587,
             secure: false,
             auth:{
-                user:'sanjeet.kumar935421@gmail.com',
+                user:'sanjeetkumar935421@gmail.com',
                 pass:'Sk@1617027'
               },tls:{
                 rejectUnAuthorized:false
