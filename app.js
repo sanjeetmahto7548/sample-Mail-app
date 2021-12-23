@@ -17,6 +17,6 @@ if(err){
     console.log(`Error in server connection ${err}`)
 }
 else{
-    console.log(`Server is running on port ${PORT}`)
+    console.log(`Server is running on port ${port}`)
 }
 })
