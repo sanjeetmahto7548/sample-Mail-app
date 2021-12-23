@@ -5,8 +5,9 @@ const cors=require('cors')
 //     origin:"http://localhost:44322",
 //     credentials: true,
 // }));
-app.use(cors());
+
 app.use(express.json())
+app.use(cors());
 app.use(express.urlencoded({extended:true}))
 
 app.use('/',require('./route/mail'))
