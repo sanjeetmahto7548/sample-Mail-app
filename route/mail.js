@@ -19,7 +19,8 @@ router.post('/sendMail',(req,res)=>{
             from:'lifexinfo <sanjeet.mahto@lifexinfo.com>',
             to:`${email1},${email2}`,
             subject:subject,
-            text:message
+            html:message
+            
         }
      transporter.sendMail(mailOptions,(err,info)=>{
             if(err){
